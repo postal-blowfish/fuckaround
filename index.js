@@ -1,12 +1,12 @@
 function getFromDataLayer(key) { 
-//    let result = null; 
-//    dataLayer.push(function() { 
-//        let value = this.get(key);
-//        if (value) {
-//            result = value;
-//        }
-//    });
-//    return result;    
+    let result = null; 
+    dataLayer.push(function() { 
+        let value = this.get(key);
+        if (value) {
+            result = value;
+        }
+    });
+    return result;    
 };
 
 function requestDataPush(ev_name) {
