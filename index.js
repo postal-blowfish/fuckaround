@@ -1,7 +1,9 @@
 function getFromDataLayer(key) { 
     let result = null; 
     dataLayer.push(function() { 
+        console.log(key);
         let value = this.get(key);
+        console.log(value);
         if (value) {
             result = value;
         }
