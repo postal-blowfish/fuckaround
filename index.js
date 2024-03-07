@@ -1,5 +1,4 @@
-// wrapper for gtag calls -> data pushes
-function gtag(){dataLayer.push(arguments);}
+
 
 function requestDataPush(ev_name) {
     var msg_out = ev_name;
