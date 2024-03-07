@@ -32,11 +32,10 @@
 
     <script>
         var ses_msg = document.getElementById("sesid");
-        
-        dataLayer.push('get', 'G-MCSWPYYBJE', 'session_id', (id) => { 
-            ses_msg.innerHTML = "Session ID: "+id;
-            console.log(id); 
-        } );
+        var ses_id = getFromDataLayer("session_id");
+
+        ses_msg.innerHTML = "Session ID: "+ses_id;
+        console.log(ses_id); 
     </script>
 
     <script src="index.js" />
